@@ -1,146 +1,135 @@
-# Flipkart Ecommerce Insights Dashboard
+# 📦 Flipkart Ecommerce Insights — Power BI Dashboard
 
-## 📘 Overview
-This project began as a raw CSV file filled with thousands of Flipkart e-commerce transactions.  
-The goal? Transform messy retail data into a clean, interactive, decision-ready Power BI dashboard.
-
-What started as a simple data file evolved into a multi-page analytics experience revealing trends, performance metrics, customer behavior, and product insights that could help any business sharpen its strategy.
+A complete end-to-end Power BI analytics project designed using Flipkart ecommerce transaction data.  
+The goal: convert raw retail numbers into actionable business intelligence using Power BI, DAX, and clean visual storytelling.
 
 ---
 
-## 📂 Dataset Story
-The dataset included:
+## 📂 Dataset Overview
+Dataset includes the following fields:
 
-- Order IDs  
-- Product categories  
-- Brands  
-- Selling prices & marked prices  
-- Ratings & reviews  
-- Item description  
-- Return status  
-- Seller & location details  
-
-The raw CSV needed heavy cleanup before it could tell a meaningful story.
-
----
-
-## 🧹 Data Cleaning & Preparation (Excel)
-Before Power BI ever saw the data, I performed several preparation steps in Excel:
-
-- Removed missing values and duplicates  
-- Standardized category names  
-- Fixed inconsistent formatting  
-- Cleaned text columns  
-- Converted price fields to numeric formats  
-- Extracted new fields where needed  
-
-This ensured a smooth import into Power BI.
+- category  
+- brand  
+- seller  
+- seller_city  
+- discount_percent  
+- final_price  
+- rating  
+- review_count  
+- stock_available  
+- units_sold  
+- listing_date  
+- delivery_days  
+- return_policy_days  
+- is_returnable  
+- payment_modes  
+- product_score  
+- seller_rating  
 
 ---
 
-## 📊 Power BI Workflow
-Once the dataset was ready, I imported it into Power BI and performed:
+## 🧹 Data Preparation (Power Query)
+Data cleaning steps performed:
 
-### **🔧 Data Modeling**
-- Created relationships between tables  
-- Added calculated columns  
-- Built DAX measures for:
-  - Total Sales  
-  - Profit Margin  
-  - Average Ratings  
-  - Return Percentage  
-
-### **📈 Visualizations Included**
-The dashboard was structured into multiple pages:
-
-1. **Sales Overview**
-   - Revenue trend line  
-   - Top-selling categories  
-   - KPI cards for quick insights  
-
-2. **Product & Brand Performance**
-   - Best-performing brands  
-   - High-return products  
-   - Ratings breakdown  
-
-3. **Customer & Region Insights**
-   - Geo-map for region-wise sales  
-   - Customer behavior analysis  
-   - Category preferences  
-
-4. **Returns & Delivery Metrics**
-   - Return rates by product  
-   - Seller performance  
-   - Delivery issues summary  
+- Removed duplicates  
+- Corrected inconsistent naming of categories/brands  
+- Ensured date type formatting for listing_date  
+- Numeric conversion for prices & units_sold  
+- Added calculated fields for delivery status & return grouping  
 
 ---
 
-## 🖼️ Dashboard Previews
+## 📊 Power BI Dashboard Structure
 
-> Upload screenshots to the repo, click each image, copy its URL, then paste it in the markdown below.
+### **Page 1 — Main Dashboard**
+- KPI Cards (Revenue, Orders, Units Sold, Rating)
+- Monthly Revenue Trend
+- Category Contribution Overview
 
-### **📍 Page 1 — Sales Overview**
-![Sales Dashboard](PASTE-IMAGE-LINK-HERE)
+### **Page 2 — Sales Dashboard**
+- Revenue by Month
+- Orders Trend Line
+- Units Sold by Category
 
-### **📍 Page 2 — Category Insights**
-![Category Insights](PASTE-IMAGE-LINK-HERE)
+### **Page 3 — Product & Brand Performance**
+- Brand Revenue Breakdown
+- Brand Ratings Comparison
+- Units Sold by Brand
 
-### **📍 Page 3 — Regional Insights**
-![Regional Dashboard](PASTE-IMAGE-LINK-HERE)
+### **Page 4 — Brand & Category Insights**
+- Revenue & Volume Matrix
+- Quality & Experience Matrix
+- Category share visualization
 
-### **📍 Page 4 — Returns Analysis**
-![Returns Dashboard](PASTE-IMAGE-LINK-HERE)
+### **Page 5 — Category & Return Analysis**
+- Return % by Categories
+- Returnable vs Non-returnable Chart
+- Avg Delivery Days by Category
 
----
-
-## 💡 Key Insights Derived
-Some major findings from the dashboard:
-
-- Certain product categories dominate sales consistently  
-- High price does **not** always equal high rating  
-- A few brands show unusually high return rates  
-- Seasonal trends influence sale spikes  
-- Specific regions outperform others regardless of category  
-
-These insights can help optimize pricing, forecast demand, and improve customer satisfaction.
-
----
-
-## 🛠️ Tools & Technologies Used
-
-- **Excel** — Data Cleaning & Preprocessing  
-- **Power BI** — Data Modeling & Visualization  
-- **DAX** — Measures & Calculations  
-- **CSV Dataset** — Source file  
+### **Page 6 — Brand Analytics Review**
+- Deep dive per brand
+- Revenue, Returns, Ratings, Units Sold, Delivery Days
+- Drill-through enabled page
 
 ---
 
-## 📥 How to Use This Project
-Download the `.pbix` file from this repository:
+## ⚙️ DAX Measures Used
 
-👉 **Flipkart_Ecommerce_Insights.pbix**
+### **📌 Sales KPIs**
 
-Open it in **Power BI Desktop** to explore the full interactive dashboard.
+```Total Revenue
+-- Total Revenue = SUM('flipkard1'[final_price])
+
+-- Total Orders = COUNTROWS('flipkard1')
+
+-- Total Units Sold = SUM('flipkard1'[units_sold])
+```
+
+### **📌 Rating Metrics**
+
+```Total revenue
+- Average Rating = AVERAGE('flipkard1'[rating])
+
+- Rating Category =
+ IF(
+ [Average Rating] >= 4, "High",
+ IF([Average Rating] >= 3, "Medium", "Low")
+  )
+```
+
+
+### **📌 Return Calculations**
+
+```text
+-- Return Orders =
+CALCULATE(
+COUNTROWS('flipkard1'),
+'flipkard1'[is_returnable] = TRUE()
+)
+
+-- Return % =
+DIVIDE([Return Orders], [Total Orders], 0)
+
+```
+
 
 ---
 
-## 📌 Conclusion
-This project demonstrates my end-to-end workflow:
+## 🏁 Summary
+This project demonstrates:
 
-- cleaning raw data  
-- building a structured model  
-- analyzing trends  
-- creating interactive dashboards  
-- communicating insights clearly  
+- Data cleaning  
+- Power BI modeling  
+- DAX measure creation  
+- Dashboard design  
+- Business insight extraction  
 
-It reflects practical analytical thinking, business understanding, and Power BI skills.
+A full analytics workflow from raw CSV ➝ polished insights.
 
----
 
-## 🔗 Project Link
-You can share this URL in your resume:
 
-**https://github.com/Lalith131313/Flipkart-Ecommerce-Insights-Dashboard**
 
----
+
+
+
 
