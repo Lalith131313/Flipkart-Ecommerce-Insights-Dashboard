@@ -41,32 +41,42 @@ Data cleaning steps performed:
 
 ## 📊 Power BI Dashboard Structure
 
-<img src="(https://github.com/Lalith131313/Flipkart-Ecommerce-Insights-Dashboard/blob/main/screenshots/Main_dashboard.jpg)" width="100%" height="100%" />
+![Main_dashboard](https://github.com/user-attachments/assets/970915c4-79d2-4d4a-a036-b67e929b7bf7)
 
 ### **Page 1 — Main Dashboard**
 - KPI Cards (Revenue, Orders, Units Sold, Rating)
 - Monthly Revenue Trend
 - Category Contribution Overview
 
+![Sales_dashboard](https://github.com/user-attachments/assets/6c6fedd9-8da9-42eb-85f5-8a18b68fe48a)
+
 ### **Page 2 — Sales Dashboard**
 - Revenue by Month
 - Orders Trend Line
 - Units Sold by Category
+
+![Product_Brand_performance](https://github.com/user-attachments/assets/cf702210-ae4d-463c-94c0-efc9ba1c3ebc)
 
 ### **Page 3 — Product & Brand Performance**
 - Brand Revenue Breakdown
 - Brand Ratings Comparison
 - Units Sold by Brand
 
+![Brand_Category_insights](https://github.com/user-attachments/assets/9fdbd10d-36a8-4027-9a0f-2b4c360642a5)
+
 ### **Page 4 — Brand & Category Insights**
 - Revenue & Volume Matrix
 - Quality & Experience Matrix
 - Category share visualization
 
+![Category Return Analysis](https://github.com/user-attachments/assets/9131a9ba-9f37-4bac-aa3e-c4dc0b3d99f4)
+
 ### **Page 5 — Category & Return Analysis**
 - Return % by Categories
 - Returnable vs Non-returnable Chart
 - Avg Delivery Days by Category
+
+![Brand Analytics View](https://github.com/user-attachments/assets/ca9ab16a-a20c-42e7-856e-850b61f2399b)
 
 ### **Page 6 — Brand Analytics Review**
 - Deep dive per brand
