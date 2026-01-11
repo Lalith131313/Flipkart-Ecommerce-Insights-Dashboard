@@ -44,28 +44,28 @@ Data cleaning steps performed:
 ### **Page 1 — Main Dashboard**
 - KPI Cards (Revenue, Orders, Units Sold, Rating)
 - Yearly Revenue Trend
-- Category Contribution Overview
+- Revenue By Brand
 
 ![Main_dashboard](https://github.com/user-attachments/assets/970915c4-79d2-4d4a-a036-b67e929b7bf7)
 
 ### **Page 2 — Sales Dashboard**
-- Revenue by Month
+- Monthly Sales
 - Orders Trend Line
-- Units Sold by Category
+- Units Sold by Month
 
 ![Sales_dashboard](https://github.com/user-attachments/assets/6c6fedd9-8da9-42eb-85f5-8a18b68fe48a)
 
 ### **Page 3 — Product & Brand Performance**
-- Brand Revenue Breakdown
-- Brand Ratings Comparison
-- Units Sold by Brand
+- Revenue By Categories
+- Revenue By Brands
+- Units sold v/s Total Revenue in a Year
 
 ![Product_Brand_performance](https://github.com/user-attachments/assets/cf702210-ae4d-463c-94c0-efc9ba1c3ebc)
 
 ### **Page 4 — Brand & Category Insights**
+- Seller Performance Table
 - Revenue & Volume Matrix
-- Quality & Experience Matrix
-- Category share visualization
+- Seller city map 
 
 ![Brand_Category_insights](https://github.com/user-attachments/assets/9fdbd10d-36a8-4027-9a0f-2b4c360642a5)
 
@@ -77,10 +77,13 @@ Data cleaning steps performed:
 ![Category Return Analysis](https://github.com/user-attachments/assets/9131a9ba-9f37-4bac-aa3e-c4dc0b3d99f4)
 
 ### **Page 6 — Brand Analytics Review**
-- Deep dive per brand
-- Revenue, Returns, Ratings, Units Sold, Delivery Days
-- Drill-through enabled page
-
+- Selected Brand Monthly Revenue vs Monthly orders 
+- Revenue by different Brands
+- Top Selling city
+- Top Selling City Revenue of brand
+- Best Category of brand
+- Best Category Revenue of brand
+- 
 ![Brand Analytics View](https://github.com/user-attachments/assets/ca9ab16a-a20c-42e7-856e-850b61f2399b)
 
 ---
