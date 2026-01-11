@@ -41,7 +41,7 @@ Data cleaning steps performed:
 
 ## 📊 Power BI Dashboard Structure
 
-<img src="(https://github.com/Lalith131313/Flipkart-Ecommerce-Insights-Dashboard/blob/main/screenshots/Brand_Category_insights.png)" width="100%" height="100%" />
+<img src="(https://github.com/Lalith131313/Flipkart-Ecommerce-Insights-Dashboard/blob/main/screenshots/Main_dashboard.jpg)" width="100%" height="100%" />
 
 ### **Page 1 — Main Dashboard**
 - KPI Cards (Revenue, Orders, Units Sold, Rating)
