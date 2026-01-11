@@ -43,7 +43,7 @@ Data cleaning steps performed:
 
 ### **Page 1 — Main Dashboard**
 - KPI Cards (Revenue, Orders, Units Sold, Rating)
-- Monthly Revenue Trend
+- Yearly Revenue Trend
 - Category Contribution Overview
 
 ![Main_dashboard](https://github.com/user-attachments/assets/970915c4-79d2-4d4a-a036-b67e929b7bf7)
